@@ -1,0 +1,117 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/processed/*.db
+
+# Large Data Files
+data/raw/*.csv
+data/processed/*.csv
+
+# Reports & Outputs
+reports/session_*/
+logs/
+*.log
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Environment specific files
+.env.local
+.env.*.local
+
+# IDE Python template
+*.py[cod]
+__pycache__/
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Credentials (security)
+credentials.json
+secrets.json
+*.pem
+*.key
+
+# OS Generated files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
