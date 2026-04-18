@@ -977,3 +977,74 @@ class ComprehensiveEDAAnalyzer:
             'unique_customers': self.df['customer_id'].nunique() if 'customer_id' in self.df.columns else 0,
             'unique_categories': self.df['category'].nunique() if 'category' in self.df.columns else 0
         }
+    
+    # ==================== Method Aliases for Dashboard Compatibility ====================
+    # These aliases ensure the dashboard can call methods with the expected names
+    
+    def q2_seasonal_pattern_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q2_seasonal_patterns"""
+        return self.q2_seasonal_patterns()
+    
+    def q3_rfm_segmentation_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q3_rfm_segmentation"""
+        return self.q3_rfm_segmentation()
+    
+    def q4_payment_method_evolution(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q4_payment_evolution"""
+        return self.q4_payment_evolution()
+    
+    def q5_category_performance_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q5_category_performance"""
+        return self.q5_category_performance()
+    
+    def q6_prime_membership_impact(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q6_prime_impact"""
+        return self.q6_prime_impact()
+    
+    def q8_festival_impact_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q8_festival_impact"""
+        return self.q8_festival_impact()
+    
+    def q9_rating_distribution_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q9_customer_rating_patterns"""
+        return self.q9_customer_rating_patterns()
+    
+    def q10_price_demand_relationship(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q10_price_demand_analysis"""
+        return self.q10_price_demand_analysis()
+    
+    def q11_delivery_performance_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q11_delivery_performance"""
+        return self.q11_delivery_performance()
+    
+    def q12_return_satisfaction_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q12_return_satisfaction"""
+        return self.q12_return_satisfaction()
+    
+    def q13_discount_effectiveness_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q13_discount_effectiveness"""
+        return self.q13_discount_effectiveness()
+    
+    def q14_customer_lifetime_value_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q14_revenue_per_customer_clv"""
+        return self.q14_revenue_per_customer_clv()
+    
+    def q15_category_trend_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q15_category_trends"""
+        return self.q15_category_trends()
+    
+    def q16_revenue_volatility_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q16_monthly_revenue_volatility"""
+        return self.q16_monthly_revenue_volatility()
+    
+    def q18_customer_acquisition_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q18_customer_acquisition_retention"""
+        return self.q18_customer_acquisition_retention()
+    
+    def q19_customer_retention_analysis(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q19_customer_frequency_distribution"""
+        return self.q19_customer_frequency_distribution()
+    
+    def q20_executive_dashboard(self) -> Tuple[plt.Figure, Dict]:
+        """Alias for q20_business_health_dashboard"""
+        return self.q20_business_health_dashboard()
