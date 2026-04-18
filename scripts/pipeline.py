@@ -1,21 +1,3 @@
-"""
-Amazon India E-Commerce Analytics - Main Pipeline Orchestrator
-==============================================================
-
-This script orchestrates the complete data pipeline:
-1. Load raw data
-2. Clean and standardize
-3. Load into database
-4. Generate EDA analysis
-5. Prepare for dashboard
-
-Usage:
-    python scripts/pipeline.py [--stage all|clean|eda|database]
-
-Author: Data Science Team  
-Date: 2025-04-08
-"""
-
 import os
 import sys
 from pathlib import Path

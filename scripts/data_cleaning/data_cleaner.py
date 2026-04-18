@@ -1,10 +1,4 @@
 """
-Amazon India E-Commerce Analytics - Data Cleaning Pipeline
-===========================================================
-
-This module provides comprehensive data cleaning functions for handling
-real-world e-commerce data quality issues (25% intentional imperfections).
-
 Key Challenges Addressed:
 1. Date format standardization (DD/MM/YYYY, DD-MM-YY, YYYY-MM-DD, invalid dates)
 2. Price cleaning (symbols, commas, text values)
@@ -17,8 +11,6 @@ Key Challenges Addressed:
 9. Outlier detection and correction (decimal point errors)
 10. Payment method standardization
 
-Author: Data Science Team
-Date: 2025-04-08
 """
 
 import pandas as pd
