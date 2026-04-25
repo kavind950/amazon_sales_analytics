@@ -507,8 +507,11 @@ class ComprehensiveEDAAnalyzer:
         fig, axes = plt.subplots(2, 2, figsize=(16, 10))
         
         if 'is_returned' not in self.df.columns:
-            logger.warning("Return column not found")
-            return fig, {}
+            if 'return_status' in self.df.columns:
+                self.df['is_returned'] = (self.df['return_status'] == 'Returned').astype(int)
+            else:
+                logger.warning("Return column not found")
+                return fig, {}
         
         return_df = self.df.copy()
         return_df['status'] = return_df['is_returned'].map({1: 'Returned', 0: 'Kept'})
