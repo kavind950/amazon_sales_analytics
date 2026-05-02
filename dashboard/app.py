@@ -624,11 +624,12 @@ def main():
                     age_cat = pd.crosstab(filtered_df['customer_age_group'], filtered_df['category'], values=filtered_df['final_amount_inr'], aggfunc='sum').fillna(0)
                     # Get top 4 categories
                     top_cols = age_cat.sum().nlargest(4).index
-                    age_cat[top_cols].plot(kind='bar', stacked=True, figsize=(8,4), ax=plt.gca(), colormap='viridis')
-                    plt.title('Category Preferences by Age Group')
-                    plt.ylabel('Revenue (INR)')
-                    plt.xticks(rotation=45)
-                    st.pyplot(plt.gcf())
+                    fig2, ax2 = plt.subplots(figsize=(8,4))
+                    age_cat[top_cols].plot(kind='bar', stacked=True, ax=ax2, colormap='viridis')
+                    ax2.set_title('Category Preferences by Age Group')
+                    ax2.set_ylabel('Revenue (INR)')
+                    ax2.tick_params(axis='x', rotation=45)
+                    st.pyplot(fig2)
             else:
                 st.info("No 'customer_age_group' column available in current dataset.")
 
